@@ -3,8 +3,12 @@
 <table>
   <tr>
     <th>Player</th>
+    <th>Unit ID</th>
     <th>Health</th>
     <th>Kills</th>
+    <th>Species</th>
+    <th>Weapon</th>
+    <th>Armour</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,8 +17,12 @@
 <% @units.each do |unit| %>
   <tr>
     <td><%= unit.player %></td>
+    <td><%= unit.unitNumber %></td>
     <td><%= unit.health %></td>
     <td><%= unit.kills %></td>
+    <td><%= unit.species %></td>
+    <td><%= unit.weapon %></td>
+    <td><%= unit.armour %></td>
     <td><%= link_to 'Show', unit %></td>
     <td><%= link_to 'Edit', edit_unit_path(unit) %></td>
     <td><%= link_to 'Destroy', unit, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>

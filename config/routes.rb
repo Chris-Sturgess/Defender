@@ -1,4 +1,8 @@
 Defender::Application.routes.draw do
+  resources :games
+
+  resources :users
+
   resources :units
 
   get "home/index"
