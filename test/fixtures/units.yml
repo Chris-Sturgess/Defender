@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  player: MyString
+  health: MyString
+  kills: MyString
+
+two:
+  player: MyString
+  health: MyString
+  kills: MyString

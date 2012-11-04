@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Player:</b>
+  <%= @unit.player %>
+</p>
+
+<p>
+  <b>Health:</b>
+  <%= @unit.health %>
+</p>
+
+<p>
+  <b>Kills:</b>
+  <%= @unit.kills %>
+</p>
+
+
+<%= link_to 'Edit', edit_unit_path(@unit) %> |
+<%= link_to 'Back', units_path %>
