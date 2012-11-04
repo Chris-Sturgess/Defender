@@ -1,6 +1,6 @@
 class Game < ActiveRecord::Base
   attr_accessible :map, :player
   
-  validates :player, :prescence = true
-  validates :map, :prescence = true
+  validates :player, :presence => :true
+  validates :map, :presence => :true
 end

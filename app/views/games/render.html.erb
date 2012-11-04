@@ -1,0 +1,13 @@
+<div>
+<% @games = Game.all %>
+<% i = 0 %>
+<% @games.each do |game| %>
+	<%= game.map.each_char {|c| 
+			print c, i
+			i = i + 1
+			if i >= 11
+				i = 0
+				print "<br>"
+			end } %>
+<% end %>
+</div>
